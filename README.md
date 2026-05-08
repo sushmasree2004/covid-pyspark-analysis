@@ -10,7 +10,7 @@ During the COVID-19 pandemic, governments and healthcare organizations needed qu
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -25,7 +25,7 @@ During the COVID-19 pandemic, governments and healthcare organizations needed qu
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 CovidAnalysis/
@@ -50,7 +50,7 @@ CovidAnalysis/
 
 ---
 
-## 📊 Datasets Used
+##  Datasets Used
 
 All datasets sourced from [Kaggle - Corona Virus Report](https://www.kaggle.com/datasets/imdevskp/corona-virus-report)
 
@@ -65,72 +65,72 @@ All datasets sourced from [Kaggle - Corona Virus Report](https://www.kaggle.com/
 
 ---
 
-## 🔧 Modules & Tasks
+##  Modules & Tasks
 
 ### Module 1: Data Loading & Schema Handling
-- ✅ Loaded all 6 CSV files into PySpark DataFrames
-- ✅ Inferred schema and printed column types
-- ✅ Counted rows in each dataset
+-  Loaded all 6 CSV files into PySpark DataFrames
+-  Inferred schema and printed column types
+-  Counted rows in each dataset
 
 ### Module 2: Data Cleaning
-- ✅ Handled missing `Province/State` values → replaced with "Unknown"
-- ✅ Standardized country names (US → United States, Korea, South → South Korea)
-- ✅ Removed duplicate Country + Date records
+- Handled missing `Province/State` values → replaced with "Unknown"
+- Standardized country names (US → United States, Korea, South → South Korea)
+- Removed duplicate Country + Date records
 
 ### Module 3: Aggregation
-- ✅ Top 10 countries by total confirmed cases
-- ✅ Top 10 countries by death rate
-- ✅ WHO Region-wise total cases, deaths, recoveries
+-  Top 10 countries by total confirmed cases
+-  Top 10 countries by death rate
+-  WHO Region-wise total cases, deaths, recoveries
 
 ### Module 4: Time-Series Analysis
-- ✅ Daily global new cases trend
-- ✅ Daily death growth percentage using window functions
-- ✅ Monthly COVID case growth
+- Daily global new cases trend
+-  Daily death growth percentage using window functions
+-  Monthly COVID case growth
 
 ### Module 5: Window Functions
-- ✅ Top 5 most affected countries per WHO Region using `dense_rank()`
-- ✅ Country-wise daily case increase using `lag()`
+-  Top 5 most affected countries per WHO Region using `dense_rank()`
+-  Country-wise daily case increase using `lag()`
 
 ### Module 6: Join Operations
-- ✅ Joined `country_wise` + `worldometer` datasets
-- ✅ Found countries with large data mismatches between sources
-- ✅ Population vs total cases — infection rate analysis
+-  Joined `country_wise` + `worldometer` datasets
+-  Found countries with large data mismatches between sources
+-  Population vs total cases — infection rate analysis
 
 ### Module 7: Geographic Analysis
-- ✅ USA state-wise case distribution
-- ✅ Latitude-Longitude based case cluster visualization
+-  USA state-wise case distribution
+-  Latitude-Longitude based case cluster visualization
 
 ### Module 8: Advanced Analytics
-- ✅ Recovery rate analysis — best and worst countries
-- ✅ Active case burden analysis — high risk countries
-- ✅ Pandemic peak identification — dates with max cases and deaths
+-  Recovery rate analysis — best and worst countries
+-  Active case burden analysis — high risk countries
+-  Pandemic peak identification — dates with max cases and deaths
 
 ### Module 9: Feature Engineering
-- ✅ Severity category classification:
+-  Severity category classification:
   - 🟢 Low → < 10K cases
   - 🟡 Medium → 10K–100K cases
   - 🟠 High → 100K–1M cases
   - 🔴 Critical → > 1M cases
 
 ### Module 10: Final Pipeline
-- ✅ End-to-end pipeline: Extract → Clean → Standardize → Join → Analyze → Export
-- ✅ Outputs saved as CSV and Parquet
-- ✅ Final dashboard visualization generated
+-  End-to-end pipeline: Extract → Clean → Standardize → Join → Analyze → Export
+-  Outputs saved as CSV and Parquet
+-  Final dashboard visualization generated
 
 ---
 
-## 💡 Key Insights
+##  Key Insights
 
-- 🌍 **Most Affected Country** → United States (4.3M+ confirmed cases)
-- 💀 **Highest Death Rate** → Yemen (29%+ death rate)
-- 💚 **Best Recovery Rate** → Countries in Eastern Mediterranean region
-- 🌐 **Most Affected WHO Region** → Americas
-- 📈 **Pandemic Peak** → Cases peaked in late July–August 2020
-- ⚠️ **25 countries** showed significant data discrepancies between sources
+-  **Most Affected Country** → United States (4.3M+ confirmed cases)
+-  **Highest Death Rate** → Yemen (29%+ death rate)
+-  **Best Recovery Rate** → Countries in Eastern Mediterranean region
+-  **Most Affected WHO Region** → Americas
+-  **Pandemic Peak** → Cases peaked in late July–August 2020
+-  **25 countries** showed significant data discrepancies between sources
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 - Python 3.13+
@@ -162,7 +162,7 @@ jupyter notebook covid.ipynb
 
 ---
 
-## 📈 Visualizations Generated
+##  Visualizations Generated
 
 - Bar chart → Top 10 countries by confirmed cases
 - Horizontal bar chart → Top 10 countries by death rate
@@ -183,7 +183,7 @@ jupyter notebook covid.ipynb
 
 ---
 
-## 🔑 Key PySpark Concepts Used
+##  Key PySpark Concepts Used
 
 - `SparkSession` — Entry point for PySpark
 - `inferSchema` — Automatic data type detection
@@ -199,13 +199,13 @@ jupyter notebook covid.ipynb
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Sushma Sree**
 - GitHub: [@sushmasree2004](https://github.com/sushmasree2004)
 
 ---
 
-## 📄 License
+## License
 
 This project is for educational purposes as part of an internship data analytics training program.
