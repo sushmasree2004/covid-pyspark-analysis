@@ -1,4 +1,4 @@
-#  OVID-19 Global Analytics Pipeline — PySpark
+#  COVID-19 Global Analytics Pipeline — PySpark
 
 A complete end-to-end **Big Data analytics pipeline** built with **PySpark** to analyze global COVID-19 trends using real-world datasets. This project covers data ingestion, cleaning, transformation, aggregation, time-series analysis, and visualization.
 
